@@ -1,5 +1,7 @@
 # GField Construction Website
 
+![GField Construction](app/favicon.ico)
+
 A modern construction company website built with [Next.js](https://nextjs.org) and bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -24,8 +26,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - **Contact Form**: Integrated with [Web3Forms](https://web3forms.com) for serverless email handling (no backend required!)
 - **Responsive**: Mobile-first design that works on all devices
 - **Optimized Fonts**: Uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) with [Geist](https://vercel.com/font)
-
-
 
 ## Tech Stack
 
