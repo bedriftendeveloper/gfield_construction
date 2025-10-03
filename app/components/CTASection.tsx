@@ -8,7 +8,6 @@ export default function CareersSection() {
     <section className="relative bg-neutral-900 text-white py-16 lg:py-24 overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left - Text Content */}
           <div className="space-y-8">
             <div className="space-y-4">
               <p className="text-neutral-400 text-sm font-medium tracking-wide uppercase">
@@ -24,7 +23,6 @@ export default function CareersSection() {
               </p>
             </div>
             
-            {/* CTA Button */}
             <div>
               <Link 
                 href="/careers"
@@ -35,9 +33,7 @@ export default function CareersSection() {
             </div>
           </div>
           
-          {/* Right - Floating Images Grid */}
           <div className="relative h-[400px] sm:h-[500px] lg:h-[600px]">
-            {/* Image 1 - Top Right with "Growing Together" caption */}
             <div className="absolute top-0 right-0 w-48 sm:w-56 lg:w-64 z-30 transform rotate-3 hover:rotate-0 transition-transform duration-300">
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
@@ -52,7 +48,6 @@ export default function CareersSection() {
               </div>
             </div>
             
-            {/* Image 2 - Center Left with "Innovation in Action" caption */}
             <div className="absolute top-20 left-0 sm:left-8 w-44 sm:w-52 lg:w-60 z-20 transform -rotate-6 hover:rotate-0 transition-transform duration-300">
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
                 <Image

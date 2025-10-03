@@ -3,10 +3,8 @@ import Image from 'next/image';
 export default function HeroSection() {
   return (
     <section className="bg-neutral-900 text-white">
-      {/* Top Hero Section */}
       <div className="container mx-auto px-4 py-12 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          {/* Text Content */}
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               Building Tomorrow{" "}
@@ -41,11 +39,9 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Bottom Section with Truck */}
       <div className="bg-neutral-950 py-12 lg:py-20">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Text Content */}
             <div className="space-y-6 border-l-4 border-blue-500 pl-6">
               <div className="flex items-start gap-4 mb-6">
                 <h2 className="text-3xl md:text-4xl font-bold leading-tight">
@@ -75,7 +71,6 @@ export default function HeroSection() {
               </p>
             </div>
 
-            {/* Right Truck Image with Dimensions Overlay */}
             <div className="relative">
             <div className="relative">
 <div className="relative w-full h-[400px] md:h-[500px] overflow-visible">
@@ -86,7 +81,6 @@ export default function HeroSection() {
     className="object-contain"
   />
   
-  {/* Dimensions overlay - positioned in front */}
   <div className="absolute inset-0 -top-0.2 -left-8 z-10">
     <Image 
       src="/mediaFiles/dimensions.png" 

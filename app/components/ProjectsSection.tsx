@@ -28,7 +28,6 @@ export default function ProjectsSection() {
   return (
     <section className="bg-neutral-900 text-white py-12 lg:py-20">
       <div className="container mx-auto px-4">
-        {/* Header */}
         <div className="text-center mb-4">
           <p className="text-neutral-400 text-sm uppercase tracking-wider mb-2">Projects</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
@@ -39,9 +38,7 @@ export default function ProjectsSection() {
           </p>
         </div>
 
-        {/* Featured Project - Pinnacle Tower */}
         <div className="grid lg:grid-cols-2 gap-8 items-start mb-16 mt-12">
-          {/* Single Large Image */}
           <div className="relative h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden rounded-lg group">
             <Image
               src="/projectMediaFile/Pini_top.png"
@@ -51,7 +48,6 @@ export default function ProjectsSection() {
             />
           </div>
 
-          {/* Text Content */}
           <div className="space-y-6">
             <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold">Pinnacle Tower</h3>
             
@@ -80,7 +76,6 @@ export default function ProjectsSection() {
           </div>
         </div>
 
-        {/* Bottom Text */}
         <div className="text-center mb-8">
           <p className="text-xl md:text-2xl lg:text-3xl font-light">
             Explore More GField Projects That{" "}
@@ -95,9 +90,7 @@ export default function ProjectsSection() {
           </Link>
         </div>
 
-        {/* Project Grid with Animations */}
         <div ref={sectionRef} className="grid md:grid-cols-3 gap-6">
-          {/* Metropolitan Link Boulevard - Slide from Left */}
           <div 
             className={`group relative overflow-hidden rounded-lg bg-neutral-800 transition-all duration-1000 ${
               isVisible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
@@ -119,7 +112,6 @@ export default function ProjectsSection() {
             </div>
           </div>
 
-          {/* Cedar Height - Slide from Right with Top Caption */}
           <div 
             className={`group relative overflow-hidden rounded-lg bg-neutral-800 transition-all duration-1000 delay-200 ${
               isVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
@@ -141,7 +133,6 @@ export default function ProjectsSection() {
             </div>
           </div>
 
-          {/* Summit Convention Center - Slide from Left */}
           <div 
             className={`group relative overflow-hidden rounded-lg bg-neutral-800 transition-all duration-1000 delay-400 ${
               isVisible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
