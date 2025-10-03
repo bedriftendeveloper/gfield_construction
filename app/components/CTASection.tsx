@@ -67,7 +67,6 @@ export default function CareersSection() {
               </div>
             </div>
             
-            {/* Image 3 - Bottom Right with "Collaborating on Site" caption */}
             <div className="absolute bottom-0 right-12 sm:right-16 lg:right-20 w-52 sm:w-60 lg:w-72 z-10 transform rotate-2 hover:rotate-0 transition-transform duration-300">
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                 <Image

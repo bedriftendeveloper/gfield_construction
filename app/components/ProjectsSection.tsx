@@ -41,32 +41,14 @@ export default function ProjectsSection() {
 
         {/* Featured Project - Pinnacle Tower */}
         <div className="grid lg:grid-cols-2 gap-8 items-start mb-16 mt-12">
-          {/* Images Grid */}
-          <div className="grid grid-cols-2 gap-4">
-            <div className="col-span-2 relative h-[300px] md:h-[400px] overflow-hidden rounded-lg group">
-              <Image
-                src="/projectMediaFile/Pini_top.png"
-                alt="Pinnacle Tower top view"
-                fill
-                className="object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-            </div>
-            <div className="relative h-[200px] md:h-[250px] overflow-hidden rounded-lg group">
-              <Image
-                src="/projectMediaFile/Pini_top.png"
-                alt="Pinnacle Tower detail"
-                fill
-                className="object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-            </div>
-            <div className="relative h-[200px] md:h-[250px] overflow-hidden rounded-lg group">
-              <Image
-                src="/projectMediaFile/Pini_top.png"
-                alt="Pinnacle Tower angle"
-                fill
-                className="object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-            </div>
+          {/* Single Large Image */}
+          <div className="relative h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden rounded-lg group">
+            <Image
+              src="/projectMediaFile/Pini_top.png"
+              alt="Pinnacle Tower"
+              fill
+              className="object-cover transition-transform duration-700 group-hover:scale-110"
+            />
           </div>
 
           {/* Text Content */}
