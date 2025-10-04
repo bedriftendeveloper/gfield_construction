@@ -1,14 +1,13 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production'
 
-const isProd = process.env.NODE_ENV === "production";
-
-const nextConfig: NextConfig = {
-  output: "export", // build static HTML files to /out
-  assetPrefix: isProd ? "./" : "", // use relative paths in production
-  basePath: "", // leave blank for custom domain (like test.gfieldconstruction.com)
+const nextConfig = {
+  output: 'export', // ✅ enables static export
   images: {
-    unoptimized: true, // required for static export if using next/image
+    unoptimized: true, // ✅ disables Next.js image optimization
   },
-};
+  assetPrefix: isProd ? './' : '', // ✅ ensures assets load relatively
+  basePath: '', // ✅ empty if serving from domain root
+}
 
-export default nextConfig;
+export default nextConfig
