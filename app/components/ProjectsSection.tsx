@@ -52,7 +52,7 @@ export default function ProjectsSection() {
             <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold">Pinnacle Tower</h3>
             
             <p className="text-neutral-400 text-sm md:text-base leading-relaxed">
-              Rising sixty stories above the city skyline, Pinnacle Tower embodies GField's vision of bold design 
+              Rising sixty stories above the city skyline, Pinnacle Tower embodies our vision of bold design 
               and spatial transformation. Its glass and steel curtain wall system captures the light of every season, 
               making it a dynamic beacon in the urban landscape.
             </p>

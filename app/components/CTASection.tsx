@@ -17,7 +17,7 @@ export default function CareersSection() {
                 Build Your Future With Us
               </h2>
               <p className="text-neutral-400 text-base md:text-lg leading-relaxed max-w-xl">
-                Join a team that transforms bold ideas into enduring spaces. At GField, you'll collaborate with 
+                Join a team that transforms bold ideas into enduring spaces. At GField, you will collaborate with 
                 driven professionals, grow your skills, and make a lasting impact in communities and 
                 industries worldwide.
               </p>
