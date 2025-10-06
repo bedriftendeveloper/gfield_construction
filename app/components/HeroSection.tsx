@@ -1,15 +1,44 @@
+"use client";
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 export default function HeroSection() {
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    setAnimate(true);
+  }, []);
+
   return (
     <section className="bg-neutral-900 text-white">
       <div className="container mx-auto px-4 py-12 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Building Tomorrow{" "}
-              <span className="text-red-600">Exceptional</span> Solutions That{" "}
-              <span className="text-neutral-400">Shape Enduring Spaces.</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight overflow-hidden">
+              <span className={`inline-block transition-all duration-700 ${animate ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}>
+                Building
+              </span>{' '}
+              <span className={`inline-block transition-all duration-700 delay-100 ${animate ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}>
+                Tomorrow
+              </span>{' '}
+              <span className={`inline-block text-red-600 transition-all duration-700 delay-200 ${animate ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}>
+                Exceptional
+              </span>{' '}
+              <span className={`inline-block transition-all duration-700 delay-300 ${animate ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}>
+                Solutions
+              </span>{' '}
+              <span className={`inline-block transition-all duration-700 delay-[400ms] ${animate ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}>
+                That
+              </span>{' '}
+              <span className={`inline-block text-neutral-400 transition-all duration-700 delay-500 ${animate ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}>
+                Shape
+              </span>{' '}
+              <span className={`inline-block text-neutral-400 transition-all duration-700 delay-[600ms] ${animate ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}>
+                Enduring
+              </span>{' '}
+              <span className={`inline-block text-neutral-400 transition-all duration-700 delay-700 ${animate ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}>
+                Spaces.
+              </span>
             </h1>
             
             <p className="text-neutral-300 text-base md:text-lg leading-relaxed max-w-xl">
@@ -24,17 +53,17 @@ export default function HeroSection() {
           </div>
 
           <div className="relative">
-            <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] rounded-sm overflow-hidden">
-  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 md:w-48 h-full bg-red-600 opacity-90"></div>
-  
-  <Image 
-    src="/mediaFiles/people_chat.png" 
-    alt="Construction team with hard hats reviewing plans"
-    fill
-    className="object-cover"
-    priority
-  />
-</div>
+            <div className={`relative w-full h-[400px] md:h-[500px] lg:h-[600px] rounded-sm overflow-hidden transition-all duration-1000 delay-700 ${animate ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 md:w-48 h-full bg-red-600 opacity-90"></div>
+              
+              <Image 
+                src="/mediaFiles/people_chat.png" 
+                alt="Construction team with hard hats reviewing plans"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -72,26 +101,26 @@ export default function HeroSection() {
             </div>
 
             <div className="relative">
-            <div className="relative">
-<div className="relative w-full h-[400px] md:h-[500px] overflow-visible">
-  <Image 
-    src="/mediaFiles/bigger_truck.png" 
-    alt="GFIELD branded truck"
-    fill
-    className="object-contain"
-  />
-  
-  <div className="absolute inset-0 -top-0.2 -left-8 z-10">
-    <Image 
-      src="/mediaFiles/dimensions.png" 
-      alt="Truck dimensions"
-      width={200}
-      height={200}
-      className="object-contain"
-    />
-  </div>
-</div>
-</div>
+              <div className="relative">
+                <div className="relative w-full h-[400px] md:h-[500px] overflow-visible">
+                  <Image 
+                    src="/mediaFiles/bigger_truck.png" 
+                    alt="GFIELD branded truck"
+                    fill
+                    className="object-contain"
+                  />
+                  
+                  <div className="absolute inset-0 -top-0.2 -left-8 z-10">
+                    <Image 
+                      src="/mediaFiles/dimensions.png" 
+                      alt="Truck dimensions"
+                      width={200}
+                      height={200}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
