@@ -1,8 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
+'use client';
+
 import Link from 'next/link';
 import { Linkedin, MessageCircle } from 'lucide-react';
 
 export default function Footer() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <footer className="bg-black text-white">
       <div className="max-w-7xl mx-auto px-6 py-12">
@@ -19,30 +28,30 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <div className="flex flex-col gap-2">
-              <Link href="/" className="text-gray-400 hover:text-white transition text-sm">
+              <button onClick={() => scrollToSection('home')} className="text-gray-400 hover:text-white transition text-sm text-left">
                 Home
-              </Link>
-              <Link href="/about" className="text-gray-400 hover:text-white transition text-sm">
+              </button>
+              <button onClick={() => scrollToSection('about')} className="text-gray-400 hover:text-white transition text-sm text-left">
                 About Us
-              </Link>
-              <Link href="/services" className="text-gray-400 hover:text-white transition text-sm">
+              </button>
+              <button onClick={() => scrollToSection('services')} className="text-gray-400 hover:text-white transition text-sm text-left">
                 Services
-              </Link>
-              <Link href="/projects" className="text-gray-400 hover:text-white transition text-sm">
+              </button>
+              <button onClick={() => scrollToSection('projects')} className="text-gray-400 hover:text-white transition text-sm text-left">
                 Projects
-              </Link>
+              </button>
             </div>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold mb-4">More</h3>
             <div className="flex flex-col gap-2">
-              <Link href="/careers" className="text-gray-400 hover:text-white transition text-sm">
+              <button onClick={() => scrollToSection('careers')} className="text-gray-400 hover:text-white transition text-sm text-left">
                 Careers
-              </Link>
-              <Link href="/contact" className="text-gray-400 hover:text-white transition text-sm">
+              </button>
+              <button onClick={() => scrollToSection('contact')} className="text-gray-400 hover:text-white transition text-sm text-left">
                 Contact Us
-              </Link>
+              </button>
               <Link href="/privacy" className="text-gray-400 hover:text-white transition text-sm">
                 Privacy Policy
               </Link>

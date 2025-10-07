@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function CareersSection() {
   return (
-    <section className="relative bg-neutral-900 text-white py-16 lg:py-24 overflow-hidden">
+    <section  id="careers" className="relative bg-neutral-900 text-white py-16 lg:py-24 overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="space-y-8">

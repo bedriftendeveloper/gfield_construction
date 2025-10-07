@@ -27,7 +27,7 @@ export default function ProjectsSection() {
   }, []);
 
   return (
-    <section className="bg-neutral-900 text-white py-12 lg:py-20">
+    <section id="projects" className="bg-neutral-900 text-white py-12 lg:py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-4">
           <p className="text-neutral-400 text-sm uppercase tracking-wider mb-2">Projects</p>

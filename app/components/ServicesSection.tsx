@@ -32,7 +32,7 @@ export default function ServicesSection() {
   const activeService = services.find(s => s.id === activeTab);
   
   return (
-    <section className="relative bg-neutral-950 text-white py-16 lg:py-24 overflow-hidden">
+    <section id="services" className="relative bg-neutral-950 text-white py-16 lg:py-24 overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left - Text Content */}

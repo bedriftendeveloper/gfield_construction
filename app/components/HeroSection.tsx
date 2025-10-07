@@ -10,7 +10,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="bg-neutral-900 text-white">
+    <section id="home" className="bg-neutral-900 text-white">
       <div className="container mx-auto px-4 py-12 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="space-y-6">
@@ -68,7 +68,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="bg-neutral-950 py-12 lg:py-20">
+      <div  id="about"className="bg-neutral-950 py-12 lg:py-20">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 border-l-4 border-blue-500 pl-6">
